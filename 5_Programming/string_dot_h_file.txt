@@ -1,0 +1,90 @@
+String functions
+
+# include <string.h>
+
+1) finding the length of the string
+
+strlen(); -> Returns an int value representing the number of characters of the string EXCLUDING the null character
+
+eg int len = 0;
+
+len = strlen(string);   //Could be contents of a character array or hardcode string
+
+char name_1 [] = "Joe";
+char name_2 [10] = "Mark";
+char *name_3 = "Patrick";
+int len = 0;
+
+len = strlen(name_1);
+
+printf("%d %d %d %d %d",strlen(name_1), strlen(name_2), strlen(*name_3), strlen("Rob"), strlen(name_1), len);
+
+NOTE: Character function MUST be NULL terminated
+
+strlen(char_arr_name);
+strlen(char_pointer_to_a_string);
+strlen(hard_coded_string);
+
+2) Copying one string to another
+
+strcpy(destination, source);
+
+eg char name [] = "sharon";
+char name_2 [10] = "mark";
+
+strcpy(name_2,name);
+
+puts(name_2);
+
+*NB: both strings MUST be Null terminated*
+
+3) string concatenation
+aka string joining
+
+strcat(string1,string2)
+strcat(destination,source);
+
+eg char v1 = "first & ";
+char v2 = "second";
+strcat(v1,v2);
+puts(v1);
+
+3) string compare
+
+compares strings -> returns a int value if the arrays match
+
+returns 0 if the two are identical
+
+4) strstr - substring within a string
+
+strstr (string1, string2)
+strstr(main string, substring to find)
+
+char name_1 [20] = "Jonathan";
+cahr name_2 = "nathan";
+
+char *p;
+
+p = strstr(name_1, name_2);
+
+printf("%s",p);
+
+*NB: Case sensitive*
+
+#include <stblib.h>
+
+char str [] = "123";
+
+int my_int ;
+long int l_int;
+double my_double
+
+my_int = atoi(str);
+
+long_int = atol(str);
+
+my_double = atof(str)l; //only work with double floating nums
+
+*NB* strcpy = must be two character arrays;
+
+4) strncpy(dest,source,n = number of characters)

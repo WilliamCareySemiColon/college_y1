@@ -1,0 +1,254 @@
+Define Structures
+
+eg Struct student_rec
+{
+	char firstname [11];
+	char surname [21];
+	int student_id, results [5];
+};
+
+struct student_rec = structure tag;
+
+structures members within {} brackets
+
+above layout is the template of a structure
+
+layout:
+
+header files
+
+symbolic names
+
+structure templates
+
+function prototypes
+
+main function
+
+structures
+
+to create a variable out of the structure you do the following:
+
+structure template_name varaible_name
+
+eg
+
+struct student_rec student_1, student_2; -> two variables are created.
+
+to compare one contents structure inot another as long as they are the same template
+student2 = student1;
+
+strucuture template 2nd way to create a template
+
+struct 
+{
+	char firstname [11];
+	char surname [11];
+	int student_id;
+	int student_grades[5];
+}  student_1, student_2;
+
+//Global variables - are very dangerous - use version 1
+
+intialising struct = {
+	"Mary", 
+	"Smith",
+	"1234",
+	{40,90,77,81,95}//end of array intialisning
+}//end of struct
+
+2nd way = {
+	,
+	"Smith",
+	,
+
+};//end of struct
+
+pointer notation for struictures
+
+#include <stdio.h>
+
+#define SIZE 5
+
+struct student_rec
+{
+	char firstname [11];
+	char surname [21];
+	int student_id;
+	int results [SIZE];
+};
+
+int main()
+{
+	struct student_rec student1 =   {
+						"John",
+						"Smith",
+						1234,
+						{48,71,99,79,53},
+					};
+	struct student_rec *ptr = &student1;
+
+	int i;
+	
+	puts(student1.firstname);
+	//derefence operator
+	puts((*ptr).firstname);
+	//arrow notation - Only works with pointer notation
+	puts(ptr->firstname); or printf("%s",ptr->firstname);
+	printf("%d",ptr->student_id);
+
+	for (i=0; i<SIZE; i++)
+	{
+		printf("%d",ptr->results[i];
+	}//end 
+}//end main
+
+passing structs as parameters
+
+2 ways - reference and value
+
+eg
+
+#include <stdio.h>
+
+#define 5
+
+struct student_rec
+
+{
+	char firstname [11];
+	char surname [21];
+	int student_id;
+	int results [SIZE]
+};
+
+//prototypes
+
+void display(struct student_rec);
+void get(struct student_rec *);
+
+int main()
+{
+	struct student_rec student;
+	struct student_rec *ptr = &student;
+
+	//enter student details
+	get(ptr);
+
+	//display results
+	display(student);
+
+	return 0;
+}//end main
+
+void get(student student_rec *stu_ptr)
+{
+	int i;
+
+	puts("Enter in first name");
+	scanf("%s",stu_ptr->firstname);
+	puts("Enter second name");
+	scanf("%s",stu_ptr->surname);
+	puts("ID");
+	scanf("%d",&(stu_ptr->student_id));
+	puts("Results");
+
+	for (i = 0, i < SIZE; i++)
+	{
+		scanf("%d",stu_ptr->results[i]);
+	}//end for loop
+}//end get()
+
+void display(struct student_rec stu)
+{
+	int i;
+
+	puts("Student Details are:");
+	puts(stu.firstname);
+	puts(stu.surname);
+	printf("\n%d",stu.student_id);
+
+	for (i = 0; i < SIZE; i++)
+	{
+		printf("\n%d",stu.results[i]);
+	}//end for loop
+}//end display()
+
+Nested structures
+
+struct date 
+{
+	int day;
+	int month;
+	int year;
+};
+
+struct person
+{
+	char firstname [11];
+	char surname [21];
+	struct date DOB;
+};
+
+or 
+
+struct person
+{
+	char firstname [11];
+	char surname [21];
+	sturct date
+	{
+		int day
+		int month;
+		int year;
+	};
+};
+
+getting input from user 
+
+int main()
+{
+	struct person student;
+	struct person *p = &student;
+
+	puts("Enter Data");
+	puts("First name");
+	gets(student.firstname)
+}
+
+struct data
+{
+	int day;
+	int month;
+	int year;
+};
+
+struct person
+{
+	char firstname [11];
+	char surname [21];
+	struct date DOB;
+};
+
+int main()
+{
+	struct person student[5];
+	int i;
+
+	printf("Please enter all the details of each student\
+	Starting at firstname, surname, Date of birth as\
+	Day, month then year\n");
+
+	for (i = 0; i < 5; i++)
+	{
+		scanf("%10s",students[i].firstname);
+		scanf("%20s",student[i].surname);
+		scanf("%d",&(student[i].DOB.day));
+		scanf("%d",&(student[i].DOB.month));
+		scanf("%d",&(student[i].DOB.year));
+	}//end for loop
+
+
+
+	return 0;
+}//end main

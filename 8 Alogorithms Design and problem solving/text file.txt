@@ -1,0 +1,47 @@
+I have four or x elements and I want to add another 1 to the list
+
+if there is no space
+
+then exit
+
+else
+	
+	if the position does not exist
+
+	then exit
+
+	else
+
+		 while i < position_required
+
+			do if i = num_of_elements - 1
+
+				do A[i++] = A[i];
+
+				i--
+
+
+binSearch(num_searched,low,high)
+{
+	if this is the number I am looking
+
+		return 
+
+	else 
+
+	mid = (high+low)/2 
+
+	if the number i am looking for greater then the number i am on
+
+	Binsearched(num_searched, mid, high)
+
+	else
+
+	binSearched(num_searched,low,mid)
+}
+
+for i = 0
+
+popping
+
+if

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="veiwpoint" content="width=device-width intial-sacale=1">
+	
+	<title> Irish Traditional Music -want to know more
+	</title>
+
+	<link rel = "stylesheet" type = "text/css" href = "CSS/My_Music.css"/>
+
+	<script src = "JavaScript/Java_for_my_music.js"></script>
+	
+</head>
+
+	<body>
+
+		<div id="body">
+
+			<header> 
+
+			<h1> Want to know on Irish Music </h1>
+			<nav id = "header">
+				<ul>
+					<li> <a class = "active" href = "My_Music.html">Home</a></li>
+					<li> <a href = "My_Music_instruments.html">Irish Instruments</a> </li>
+					<li> <a href = "My_Music_irish_dances.html">Irish Dances tunes</a></li>
+					<li> <a href = "My_Music_composers_and_performers.html">Composers & Performers</a></li>
+					<li> <a href = "My_Music_want_to_know_more.html">Want to know more about Irish Music </a></li>
+				</ul>
+			</nav>
+			
+			</header>
+
+			<section> 
+				<h2> Want to know more about Irish Music or Contribute, then fill in the following:
+ 				</h2>
+			<div class ="center">
+				
+ 				<form action="server-script-url" name = "regForm" onsubmit = "return (validate())">
+					<label>
+					<span >Firstname:</span><span class = "ErrorMessage" id = "firstName"></span>
+					</label>
+					<input class = "general_input" type="text" name="First_name" ><br>
+				
+					<label>
+					<span>Surname:</span><span class="ErrorMessage" id = "SurName"></span>
+					</label>
+					 <input class = "general_input" type="text" name="surname" ><br>
+
+					 <label>
+					<span>What year did you know Irish Music:</span><span class="ErrorMessage" id = "Year_knowledge"></span>
+					</label>
+					 <input class = "general_input" type="text" name="year_knowledge" ><br>
+
+					 <label>
+					 	<span>E-mail:</span><span class="ErrorMessage" id = "E-MAIL"></span>
+					 </label>
+					 <input class="general_input" type="text" name="email" ><br>
+					
+					<label>
+					<span>What Instrument do you play / know about:</span>
+					</label><select class = "general_input">
+						<option value="harp">Harp</option>
+						<option value="bodhran">Bodhran</option>
+						<option value="spoons">Spoons</option>
+						<option value="fiddle">Fiddle</option>
+						<option value="banjo">Banjo</option>
+						<option value="uillean_pipes">Uillean Pipes</option>
+						<option value="Piano Accordion">Piano Accordion</option>
+					</select><br>
+					
+					<label>
+					<span>Did you find the information useful:</span>
+					</label><br>
+					<input class = "click_input" type="radio" name = "boolen" value="Yes" checked><strong class = "answer">Yes</strong><br>
+					<input class = "click_input" type="radio" name = "boolen" value="No" checked><strong class = "answer">No</strong><br>
+					
+					<label>
+					<span>Which of the following would you like to be updated with more information:</span>
+					</label><br>
+					<input class = "click_input" type="checkbox" name="page" value = "home"><strong class = "answer">The Home Page</strong><br>
+					<input class = "click_input" type="checkbox" name="page" value = "instrument"><strong class = "answer">Irish Instruments Page</strong><br>
+					<input class = "click_input" type="checkbox" name="page" value = "dance"><strong class = "answer">Irish Dance Page</strong><br>
+					<input class = "click_input" type="checkbox" name="page" value = "composers_and_performers"><strong class = "answer">Composers and Performers</strong><br>
+					<input class = "click_input" type="checkbox" name="page" value = "want_to_know_more"><strong class = "answer">Want to know more Page</strong><br>
+					
+					<label>
+						<span>If I missed anything let me know below and I add more text when I get the chance:</span>
+					</label>
+					<textarea name="Message_about_Irish_music" rows="20" cols="40" class="general_input_1"></textarea>
+					
+					<button type = "submit" value="click_me">Submit</button>
+					</form>
+			</div>
+				</section>
+
+			
+
+			<footer>
+				<h1> Site Created by William Carey &copy; 2016
+				</h1>
+			</footer>
+
+		</div>
+	</body>
+
+</html>

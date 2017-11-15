@@ -1,0 +1,12 @@
+WHILE i < size
+DO
+IF A[i] = Ans
+THEN PRINT found
+ELSE DO
+negative++
+END IF ELSE
+i++
+END WHILE
+IF negative == i
+DO
+PRINT not found

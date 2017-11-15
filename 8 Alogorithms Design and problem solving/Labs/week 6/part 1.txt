@@ -1,0 +1,19 @@
+part 1`)
+
+SET max = min = A[i] 
+
+WHILE i < N
+DO
+
+IF A[i] < min
+SET min = A[i]
+END IF
+
+IF A[i] > max
+SET max = A[i]
+END IF
+
+SET i = i + 1
+END WHILE
+
+The big o of this algorithm is (N)

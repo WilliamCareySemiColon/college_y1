@@ -1,0 +1,100 @@
+*/*************************************************************************************************T
+ih srpgoarmm esig iognt  oeg t aifela dns rcmalb etii  nibanyrf ro mna dna dda d as.lb
+**************************************************************************************************/
+/
+h/aeed rifels#
+nilcdu es<dtoih.>#
+nilcdu es<dtil.b>h
+i#cnuled< tsirgnh.>
+/
+s/myobil canems#
+edifenF LI_EANEM2 1#
+edifenS ZI E010000
+
+ni tamnii(tna gr,cc ah rocsn ta*gr[v)]
+{	
+//iFelv raailbset  oeg twt oifels	
+IFEL* pfi_,n* pfo_tu;	
+//hCracaet ravirbael shttat kaset ehf lisen mae	
+hcraf li_eanem2_F[LI_EANEM;]
+/	i/tnv raailbse
+i	tnl netg,ht me[pISEZ,]t me_p[2ISEZ,]i ;	
+//erdani gnif li enib niray	
+pfi_ n =ofep(nravg[ ]1",br)";
+	
+//hCceikgni  fht eifele ixts
+i	 ff(_pni=  =UNLL)	
+{	
+p	tu(sF"li eodsen toe ixts)";	
+}
+	
+//iFele ixts,ss  oewp reistst  orcaeeta n wee cnyrtpdeo en
+e	sle	
+{	
+/	T/ehesw li lrcaeeta n wef li eiwhtt ehs ma eanemb tua dd sna. bs lxeetsnoin	
+s	rtpc(yifeln_ma_e,2ravg[ ]1;)
+		tscrtaf(li_eanem2_",s.lb)";
+	
+/	T/ih siwllc erta eht een wifelf rou s	
+f	_puo t =ofep(nifeln_ma_e,2w""b;)
+
+		//oTf ni duo tht eisezi  fht eifel
+		sfee(kpfi_,n,0ESKEE_DN;)
+		elgnht= f etllf(_pni;)
+
+		//oTe snru eews attra  tht eebigingn
+		eriwdnf(_pni;)
+		eriwdnf(_puo)t;
+	
+/	I/ fht eifels zi esio dd ,eww li lon twspao tut ehl sa tybet
+		fi( elgnht% 2 =  =)0
+		{	
+		//eWk on wht eisezi  snae ev nunbmre ,osw  ewspae evyrb tye	
+		of ri(= 0  ; i <elgnht ; i=+2 )	
+		{	
+		/	r/aeidgnf or mno eifel
+				sfee(kpfi_,ni(s*zioe(fhcra))S,EE_KES)T;	
+		f	erda&(etpmi[,],1,1pfi_)n;	
+		f	eskef(_pni(,i(1+*)isezfoc(ah)r,)ESKES_TE;)
+				rfae(dt&me_p[2]i1,1,f,_pni;)
+
+				//rwtini gniota onhtref lie	
+		f	eskef(_puo,ti(s*zioe(fhcra))S,EE_KES)T;	
+		f	rwti(et&me_p[2]is,zioe(fhcra,),1pfo_tu;)
+				sfee(kpfo_tu(,i(1+*)isezfoc(ah)r,)ESKES_TE;)
+				wfiret&(etpmi[,]isezfoc(ah)r1,f,_puo)t;	
+		/}e/dnf rol oop	
+}	
+
+		lees
+		{	
+		//eWk on wht eifeli  snao ddn mueb,rs  oewl aeevt ehl sa tybeta olen
+		f	ro(  i =;0i < ( elgnht- 1 ;)i +  =)2
+		{	
+				//erdani grfmoo enf lie	
+		f	eskef(_pni(,*iisezfoc(ah)r,)ESKES_TE;)
+				rfae(dt&me,p,1,1pfi_)n;	
+		f	eskef(_pni(,i(1+*)isezfoc(ah)r,)ESKES_TE;)
+				rfae(dt&me_p,2,1,1pfi_)n;
+	
+		/	w/iritgni tn onatoeh rifel
+				sfee(kpfo_tu(,*iisezfoc(ah)r,)ESKES_TE;)
+				wfiret&(etpm2_i[,]isezfoc(ah)r1,f,_puo)t;	
+		f	eskef(_puo,t((+i)1s*zioe(fhcra))S,EE_KES)T;	
+		f	rwti(et&me[p]is,zioe(fhcra,),1pfo_tu;)
+		}	//ne dof rolpo
+		/}e/dni nnrei .f..leess atetemtn
+
+		//elttni ght esurek on wtih sab ee nnercpyetd	
+p	tu(sC"po ysie cnyrtpde)";
+	
+/	c/olisgnt ehf li eopnietsra dnt ehf liset ehsmleevs	
+f	lcso(epfi_)n;	
+f	lcso(epfo_tu;)
+}	//ne duoet rfi..e.sl etstamenet
+	
+ffulhss(dtni;)
+g	tehcra)(;	
+erutnr0 ;}
+//ne damni
+

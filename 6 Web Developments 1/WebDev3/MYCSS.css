@@ -1,0 +1,54 @@
+
+
+h1{ color: purple;
+   font-size: 40px;
+   text-align: center;
+   background-color: white;
+   height: 100px;}
+
+h3 { color: blue;
+    font-size: 30px;
+	height:100px;}
+	
+	h4{ color: darkblue;}
+	
+
+p{ color: white;
+	font-size: 20px;
+	width: 80%;
+	text-align: center;
+	height: 200px;}
+ 
+ a:link{color: Green;}
+ a:visited{color: brown;}
+ a:hover{color: Blue;}
+ a:active{ color: black;}
+ 
+ body{background-color: grey;}
+	
+	#Wills-Main{
+		width: 80%;
+		margin: auto;
+		background-color: orange;}
+	
+	header { text-align: center;
+	background-color: white;}
+	
+	section{ text-align: center;}
+	
+	footer{text-align: center;
+	background-color: white;}
+	
+	footer p{ color: purple;
+	height: 30px}
+	
+	nav{ text-align: right;}
+	
+	#RightSide{
+		position: relative;
+		float: right;
+		margin-left: auto;}
+		
+		iframe{float: left;
+		height:200px;
+		width: 400px}

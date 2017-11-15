@@ -1,0 +1,38 @@
+signed 16 bit numbers have a range of 0 - 32767 ansd minus 1 - minus 32768
+
+32767 + 1 = -32768
+
+question 3)
+
+device at 0x30009010
+
+in c language
+
+#define RGEN (*(long*)0x30009010)
+
+//long *ptr;
+
+x = RGEN;
+
+RGEN = 2;
+
+
+for most microproceesor placing one iside GPIO0DIR makes GPIO an output
+
+4) Answer in bin 100001000000 or in hex 840
+
+AND NOT = clear bit(s);
+OR = Sets bit(s)
+
+
+     0100 0000  = 0100 0000
+(NOT 0100 0000) = 1011 1111 AND = 0000 0000
+
+while (GPIODATA && BIT2 == 0)
+
+every bytes up (eg kilobytes , megabytes) is 1024 to the power of whatever step you are on.
+7) 19200/8 = 2400
+
+10 X 1024^2 = 10,485,760
+
+10,485,760 / 2400 = 4639

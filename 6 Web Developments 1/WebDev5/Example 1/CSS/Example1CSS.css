@@ -1,0 +1,51 @@
+body{
+	background-color: white;
+	}
+	
+#main{ 
+	  background-color: white;
+	  width: 70%;
+	  margin: auto;
+	  border: 1px black solid;
+	  }
+	  
+header, footer {
+	background-color: grey;
+	height: 10%;
+	text-align: center;
+	color: white;
+			   }
+			   
+#content {
+	position: relative;
+	min-height: 70%;
+		 }
+
+#SubContainer {
+	width: 90%;
+	height: 70%;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom: 10px;
+	border: 1px black solid;
+}
+
+#LeftMenu {
+	display: inline-block;
+	width:20%;
+	height: 100%;
+	border-right: 1px solid green;
+	margin: auto;
+}
+main h3{
+	margin: 1em;
+	margin-top: 2px;
+	   }
+
+#RightMenu{
+	vertical-align: top;
+	display: inline-block;
+	border-right: opx block solid;
+	width: 60%;
+	height:90%;
+	margin:0px;}

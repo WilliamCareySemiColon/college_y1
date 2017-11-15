@@ -1,0 +1,17 @@
+typedef statement 
+
+typedef int* INT_POINTER
+
+int *p1, *p2;
+
+INT_POINTER p1, p2
+
+c preprocessor
+
+C code -> modified code -> complied code (excutable file)
+
+deals with the header files first -> #include (contained in a standard include directory)
+
+<> means look inside your standard include only
+"" means look inside same directory as source code then in the standard inclde file
+#include ".\my_header\stdio.h" -> looks inside current directory

@@ -1,0 +1,64 @@
+LINKED LISTS
+
+This links different variables together without a naming convention most of the time
+
+eg 
+
+//struct template
+struct list
+{
+	char list1 [11];
+	char list2 [11];
+
+	//this points at another struct with the same contents as "struct list"
+	struct list *next;
+};
+
+
+int main()
+{
+	//the three variables follows the above struct template
+	struct list sample3 = {
+							//list1
+							"abc";
+
+							//list2
+							"123";
+
+							//what next is pointing to
+							Null;
+	};
+
+	struct list sample2 = {
+							//list1
+							"abc";
+
+							//list2
+							"123";
+
+							//what next is pointing to
+							&sample3;
+	};
+
+	struct list sample1 = {
+							//list1
+							"abc";
+
+							//list2
+							"123";
+
+							//what next is pointing to
+							&sample2;
+	};
+
+	`//this is the head of the linked lists this ppints to the begining of the list
+	struct list head, *current;
+
+	current = head.next = &sample1;
+
+	//to access each content of the list
+	while (current->next != NULL)
+	{
+		current = current->next;
+	}
+}end main

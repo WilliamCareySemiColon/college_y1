@@ -1,0 +1,10 @@
+The details of student a are: 
+Name:Jane 
+Surname:Ferris 
+DOB:01-01-1999 
+Address:DIT, Kevin Street, Dublin2		 
+Phone Number:01 402300 
+PPSN:123456X
+Bank Number:A1B2C3D4		  
+Bank Balance:0.00
+

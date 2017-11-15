@@ -1,0 +1,26 @@
+define single
+	printf "-----------------------------------------\n"	
+	printf "Next instruction: "
+	step
+	printf "	eax=0x%x\n", $eax  
+	showflags
+	printf "-----------------------------------------\n\n"
+	
+end
+document single
+Take one step in the program and diplay the registers.
+end
+
+define showflags
+
+    printf "  SF=%d  ZF=%d  AF=%d  PF=%d  CF=%d  OF=%d  DF=%d\n",\
+           (($eflags >> 7) & 1), (($eflags >> 6) & 1),\
+           (($eflags >> 4) & 1), (($eflags >> 2) & 1), ($eflags & 1), (($eflags >> 0xB) & 1), (($eflags >> 0xA) & 1)
+end
+document showflags
+Print eflags register.
+end
+
+
+break myasm
+run

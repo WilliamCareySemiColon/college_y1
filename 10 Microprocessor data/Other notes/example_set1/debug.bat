@@ -1,0 +1,1 @@
+gdb %1.exe --command=gdbinit

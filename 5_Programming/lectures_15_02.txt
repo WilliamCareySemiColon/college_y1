@@ -1,0 +1,63 @@
+char greetings [ ] = {'H', 'E', 'L', 'L', 'O'} - problem with this character - non-null terminated string - could crash machine
+
+we just see five characters - there is actually a sixth known as the null character displayed as '\0'
+
+correct version - char greetings [ ] = {'H', 'E', 'L', 'L', 'O', '\0'}
+
+char greeting [ 10 ] = { 'H', 'E' , 'L', 'L', 'O' '\0', '\0', '\0', '\0'};
+
+char greetings [2] = {'H', 'E', 'L', 'L', 'o', '\0'}   - some compliers will not compile while others will display whole word dispite "2" size
+
+intialising characters:
+
+1) chararcters greeting [ ] = {'H', 'E', 'L', 'L', 'O', '\0'}
+
+2) char greeting [ ] = "Hello";
+
+Displaying strings:
+
+
+int main()
+{
+	char greeting [ ] = "Hello";
+
+	printf("%s",greeting);  -> %s is delimeter for string ->  prints "hello"
+
+	printf("\n");
+
+	printf("%20s", greeting); -> counts 20 space before printing the string       _________________Hello
+
+	printf("%-20%", grreting); -> prints the word then count 20 spaces            HELLO_________________
+
+	printf("2o.2s", greeting);  -> prints two characters after 20 spaces          ____________________He
+
+	//another way of displayinng output to the string
+
+	puts(greeting);                                           -> same function as printf except built in "\n" to move automatically to the next line
+
+	puts("Hello");             another way of displaying a string literal
+
+
+} 
+
+
+piece of code 
+
+#include <stdio.h>
+
+int main()
+{
+	char name [21];
+
+	printf("Please enter your name");
+
+	scanf("%s",name);                    ->      name of array = &name [0]
+
+	printf("\nHello ");
+
+	puts(name);
+
+	return 0;
+
+}
+

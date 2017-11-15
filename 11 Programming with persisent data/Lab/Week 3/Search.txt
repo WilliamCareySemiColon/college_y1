@@ -1,0 +1,6 @@
+This is a text file
+containing pure text
+I love my program written in C
+This is the second last line
+This is the end of the file.
+

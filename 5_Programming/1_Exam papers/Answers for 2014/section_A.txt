@@ -1,0 +1,33 @@
+a) since there is a space between the two assignments, the complier won't know which to do, as one is calling to do a comparison function, while the other is doing an assignment operation. Because of this, the if statement will never get executed.
+
+b) int arr[12]
+
+for (int i = 0; i < 12; i++)
+{
+	arr [i] = i + 1;
+}
+
+c) #define SIZE 12
+
+d) to have access to the contents of a variable by storing its address
+
+e) puts() displays a literal string or the contents of a character array while gets() takes a string of character and stores it inside a array, even if there is a space within the string  
+
+eg puts("\"What is your name(s)?\"");
+   gets(name);
+
+   puts(name);
+
+f) a programmer complier checks all the lines of the code before converting it into an excutable, where as an interpreter checks line by line as it converts it
+
+g) 7 4 7 3
+
+h) printf("\"The home drive is on the u:\drive\", he said.");
+
+i) The input in going out of bounds
+   the complier won't know what is the inout due to no delimeter
+   The first place in the array is completely ignored
+
+j) the purpose of the typedef function is to change a keyword or variable into any word you want from th point and place you declare it onwards
+
+eg typedef int * INT_POINTER

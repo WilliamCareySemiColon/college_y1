@@ -1,0 +1,54 @@
+/*Program for lecture on the 14th febuary 2017
+
+
+ #include <stdio.h> 
+
+sin (x)                     x = type double
+cos (x)
+tan (x)
+
+pow(x,y) = Z                x to the power of y    X y Z are double types
+
+log(x)                      x is a double type
+
+rand();   -> int  ->   DO NOT USE   -> Use Srand(x)    x = seed value, which is the value you have inputted for the range   x is an integer
+
+
+
+strings
+
+this is a array of characters
+
+eg char word [10];
+
+char word [] = {'H' 'E' 'L' 'L' 'O' '\0'};
+
+eg printf("Hello") -> string literal
+
+eg "Hello world",he said
+
+printf("\"Hello world\", he said");
+
+"The C:\ is the root drive",he said
+
+printf("\"The C:\\ is the root drive \", he said");
+
+
+printf("This is a very long string that goes on and on forever.......");
+
+                   |
+                   down
+
+
+printf("this is a very\
+		long string that go\
+		es on and on forever\                       No code inside or comments in this area
+		....";)
+
+
+printf("This is a very long"
+		"string that goes"
+		"on and on forever....";)
+
+
+

@@ -1,0 +1,41 @@
+for (count = 0; count < 5; count++)
+{
+	if (array[count] = 5)
+	print "Successful"	;
+	break;
+}
+
+while (count < array)
+{
+	if (array[count] = 5)
+	print "Successful"	;
+	break;
+
+	count++;
+}
+
+arr_1 [size]; 
+arr_2 [size] =  {1,.....,8};
+i,j, min;
+
+for (i = 0; i < size; i++)
+{
+	min =  arr_2[i];
+
+	for (j = 0; j < size; j++)
+	{
+		if (min < arr_2 )
+	}
+}
+
+for 
+{
+
+
+	for 
+	{
+
+	}
+
+	
+}

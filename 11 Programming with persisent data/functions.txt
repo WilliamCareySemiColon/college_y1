@@ -1,0 +1,17 @@
+phonebook that performs the following
+
+Add new contact
+delete old contact
+edit old contact
+find contact
+Record contacts
+
+needs to be implemented using an array
+error checking to be included
+for the recording part implment an sorting alogoritm so they are ordered
+
+after adding another contact, deleting another contact or editing an display function must be implemented to show the contents of the array
+for demoing purpose use symblic size five with three pre-initalised variables.
+
+additional function to be included
+display

@@ -1,0 +1,42 @@
+1) 
+(a)	You will get a get a complier error with the "my_array [] = i" line as you have not defined which part of the array is the contents of i is going into. This can be made different 		by changing the line to "my_array [i] = i"
+
+(b) You will get a wierd output as the code does not compact well with deciminal numbers. As we are using a whole number delimeter, the code would expect a whole number. However, since it is a floating number, it will display a wierd number. with other compiers, it would probably not work.
+
+(c) you would use a switch statement when there is mutiple conditions that needs certain code to code, that tghe only other way to track them all is to use mutiple if statement
+
+(d) float Arr [5] = {1.1, 2.2, 3.3, 4.4, 5.5};
+
+(e) To access the contents of a variable by storing its address to access its contents
+
+(f) the address location of the first element
+
+(g) change arr[i] to *(arr + i)
+
+(h) printf("\"Done like a Boss\" said the student");
+
+(i) it is going through each part of the character array, printing the until each reaches the end of the the array, when is determined by the null character itself
+
+(j) int my_fun(char *, char []); 
+
+(k) struct person_details
+{
+	//f_name is firstname
+	char f_name [11];
+	char surname[21];
+	int age;
+	//true or false only
+	bool student_status;
+};
+
+(l) I would use a c programme as c is much quicker and therefore would be much better deal with timing due to access to the address variables
+
+(m)char one[] = "Bazinga"; & char one [8] = {'B', 'a', 'z', 'i', 'n', 'g', 'a', '\0'}; 
+
+(n) x = 4, y = 3 and z = 3
+
+(o) you are trying to store the address of the array into another regular array, which cannot be done. then dislay the contents of the none filled arrays, which will display rhadom data
+
+(p) bool as short and long are int data types and characters are supproted in switch aswell as ints
+
+(p) a register data is stored data in cache, which would increase performace as it is closer to the memory management surface  eg register int index;

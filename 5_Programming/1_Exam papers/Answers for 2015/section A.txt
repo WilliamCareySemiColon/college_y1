@@ -1,0 +1,35 @@
+(a) letter stores only one characters not strings as array of characters. However, the double quotations sugeest you are storing an array of characters, which will give a complier error and when trying to store it, you are using the stirng way of taking it in, but using %c, which should include & following for charcters but none follows.
+
+(b) struct bank_details
+{
+	//firstname with max of 10
+	char f_name [11];
+
+	//surname with max of 20
+	char s_name [21];
+
+	//account number usually have a combo of characters and numbers
+	char balance [11];
+
+	//balance for the account - in case there is values less than one euro - person could be also rich
+	double balance;
+};
+
+(c) do while loop ganrantees excution at least once while the while loop does not 
+
+(d) there is no delimeter, meaniing the number which not get printed
+
+(e) pass by value meaning a copy of the values are passed, whereas the pass by reference meaning a copy of the address is passed through the functions. in pass by value, the original value remains untouched, whereas it could be modified in pass by reference
+
+(f) int my_fun(char *, float []);
+
+(g) auto variables are what the syetem treats the data unless otherwise specfied. These can be intiased and reintialsed mutiple times, meaning when a function is called that contains auto variables, they lose their value when the function ends. This is different to static, as they are intialsed only oncwe and so retain their data after the function ends. Register data are stored in the cache area meaning it is qucik access to where these values are stored, making the code more efficient.
+
+(h) for (int i = 0; i < 3; i++)
+		{
+			printf("%.1f", *(numbers + i));
+		}
+
+(i) puts("\"I save my c programmes on my U:/Drive\", said the student.");
+
+(j) The use of puts is to display the contents of a array to the end user, without having to use the next line character. Gets catches every character, including spaces, which is usefull for double barrel names

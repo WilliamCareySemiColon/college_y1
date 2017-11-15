@@ -1,0 +1,37 @@
+macros
+
+#define PI 3.14
+#define NEWLINE '\n'
+
+#define N 100
+
+#undef N
+
+#define N 200
+
+Macro arguements 
+
+#define SQUARE(N) (N)*(N)
+
+int main()
+{
+	int num = 2;
+	int result;
+
+	float var = 5.5;
+
+	result = SQUARE(2);
+
+	printf("squared is %d",result);
+	printf("5.5 squared is %.2f",SQUARE(var));
+
+	return 0;
+}//end main
+
+
+#ctype macros
+
+isdgit()
+isalnum()
+tolower()
+toupper()

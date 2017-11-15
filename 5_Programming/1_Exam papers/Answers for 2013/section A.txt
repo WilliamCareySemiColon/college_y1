@@ -1,0 +1,21 @@
+a) There is an assignment operation within the if statement. 
+   There is a semicolon after the if statement
+   It is doing a comparison with the 6th postion in the array
+
+b) 7.13 is the output from the code
+
+c) a do-while loop ganruntees at least one run through, where as a while loop does not 
+
+d) printf("\"Hello World"\");
+
+e) to have access to the variables contents through their address location
+
+f) what is *p pointing to
+
+g) numbers[i] = *(numbers + i)
+
+h) printf("C:\\ is the root directory of drive c");
+
+i) an auto variable can be intialised mutiple times, meaning when the function that requires it ends, the auto variable gets removed from memory and the data within it is deemed as random. Static is only intialised once. Therefore, it keeps it memory when the function reqiring it ends.
+
+j) char my_fun(int, char []);

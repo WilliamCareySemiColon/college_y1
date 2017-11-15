@@ -1,0 +1,9 @@
+Question 2 a) This is O 1 as only one loop is needed to find the remainder answer for the euclids alogirthm.
+
+b) This is O 2 as you need an indented loop within a loop in order to create the tree that is asked to be created
+
+c ) Mutiple games is O 2 as you would need a loop within a loop. A single game is O 1 as you are only using a loop for the possiblity of a draw in the game itself  
+
+
+quicksort alogirthm
+

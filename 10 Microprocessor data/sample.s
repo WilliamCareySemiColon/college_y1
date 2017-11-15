@@ -1,0 +1,43 @@
+AREA DATA
+; put all variables here
+X DCD 0
+Y DCD 0
+Z DCD 0
+
+
+	AREA THUMB, CODE, READONLY
+;put all your code and constants here
+
+;These symbols need to be global to keep the linker happy
+	GLOBAL __Vectors
+	GLOBAL Reset_Handler
+
+;Interrupt vector table First entry = initial stack pointer, second entry = Address of
+__Vectors
+	DCD 0x10001000
+	DCD Reset_Handler
+
+;Code starts here
+Reset_Handler
+	MOVS R0,#10   ;initial value for X
+	LDR R1,=X     ;get address of X into R1 (R1 "points to" X)
+	STR R0[R1]    ;Store contents of R0 where R1 points
+	
+	MOVS R0,#17
+	LDR R1,=Y
+	STR R0,[R1]
+	
+;Read contents of X into R2
+	LDR R1,=X
+	LDR R2,[R1]
+
+;Read contents of X into R2
+	LDR R1,=Y
+	LDR R3,[R1]
+
+	ADDS R4,R2,R3  ;add R2 to R3 and put result in R4
+
+;Write result to Z
+	LDR R1=Z
+	STR R4,[R1]
+		end

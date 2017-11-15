@@ -1,0 +1,5 @@
+printf("%3.2f",7.128); == _ _ _ = 7.13 (3 spaces is ignored)
+
+printf("%6.2f",7.128); == _ _ _ _ _ _ = _ _ 7.13 (right aligns the text)
+
+ptr = realloc(ptr, (10*sizeof(float)) + (numbers*sizeof(float))) -> ptr = realloc(ptr,(numbers + 10) * sizeof(float));

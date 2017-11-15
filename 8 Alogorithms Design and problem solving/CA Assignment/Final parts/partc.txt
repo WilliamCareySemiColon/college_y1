@@ -1,0 +1,24 @@
+START PROGRAMME
+
+CREATE counter, file pointer 
+
+PROMPT for file and point file pointer to it
+
+IF file does not exist, tell the user
+
+ELSE
+	WHILE it is not the end of file
+	DO
+		IF it is the person we want
+		print the student details to the screen
+		end while loop
+
+		ELSE
+			postion plus 1
+			counter plus 1
+
+	END WHILE
+
+CLOSE file
+
+END PROGRAMME

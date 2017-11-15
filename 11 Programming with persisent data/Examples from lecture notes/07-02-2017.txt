@@ -1,0 +1,18 @@
+
+
+strcat(string,"that's young");
+strcat (str, str1);
+
+main()
+{
+	char str [10] = "abc";
+
+	puts("what age are you");
+
+	gets(str);
+
+	strcat(str,"Years young");
+
+	puts(str);
+	
+}

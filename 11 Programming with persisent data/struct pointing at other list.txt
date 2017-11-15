@@ -1,0 +1,36 @@
+struct list 
+{
+	'name';
+	int data;
+	struct list* -> This points to the template
+}
+
+
+void main()
+{
+	struct list node1  = null;
+	struct list*;
+	struct list node2;
+}
+
+struct list node2;
+
+linked lists -> none continous blocks linked by pointers declared with the struct
+
+also kmown as self refrential
+
+Flexible: grows and shrinks
+
+struct.member;
+struct[2].member;
+
+(*list).data = 5;
+list->data = 5;
+
+node2 = (struct node*)malloc(sizeof(struct list));
+
+node2 -> data = 5;
+
+node2 -> next = NULL;
+
+name = node2;
